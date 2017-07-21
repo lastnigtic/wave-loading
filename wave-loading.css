@@ -1,0 +1,22 @@
+/*加载圈*/
+.wave-container{position: relative;padding: 5px;border-radius: 50%;}
+.wave-container .percent{display: inline-block;position: absolute;top: 50%;transform: translateY(-50%);width: 100%;text-align: center;font-size: 30px;z-index: 100;}
+.wave{position: relative;border-radius: 50%;overflow: hidden;transform:scale(0.99);}
+.waves{position: absolute;top: 0;left: 50%;transform: translate(-50%, -60%);}
+.waves.before{border-radius: 48%;animation: rotate 16s infinite;}
+.waves.after{border-radius: 45%;animation: rotate 10s infinite;}
+@keyframes rotate{
+	0%{transform: translate(-50%, -60%) rotate(0);}
+	50%{transform: translate(-50%, -62%) rotate(360deg);}
+	100%{transform: translate(-50%, -60%) rotate(0);}
+}
+
+
+.ss{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+#slider{width:500px;margin: 0 auto;}
+#slider .ui-slider-range { background: #e45931; }
+#slider .ui-slider-handle { border-color: #e45931; }
